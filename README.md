@@ -7,8 +7,8 @@
 
 ## GitHub Repository:
 
-- [Client-Repository]()
-- [Server-Repository]()
+- [Client-Repository](https://github.com/khaledssbd/RideRevolt-client)
+- [Server-Repository](https://github.com/khaledssbd/RideRevolt-server)
 
 ---
 
@@ -32,12 +32,13 @@ bike shopping experience. Built with performance, reliability, and user
 experience in mind, the platform allows users to explore a diverse range of
 bikes, make secure purchases, and enjoy reliable after-sales support.
 
-🔥 Key Features ✅ Diverse Bike Selection – From urban commuters to
-high-performance sports bikes. ✅ Quality Assurance – Every bike is tested for
-durability and performance. ✅ Secure Transactions – Ensuring safe and seamless
-purchases. ✅ User-Friendly Interface – Easy navigation for an effortless
-shopping experience. ✅ Customer-Centric Support – Dedicated assistance for
-every customer.
+# 🔥 Key Features
+
+- ✅ Diverse Bike Selection – From urban commuters to high-performance sports bikes.
+- ✅ Quality Assurance – Every bike is tested for durability and performance.
+- ✅ Secure Transactions – Ensuring safe and seamless purchases.
+- ✅ User-Friendly Interface – Easy navigation for an effortless shopping experience.
+- ✅ Customer-Centric Support – Dedicated assistance for every customer.
 
 # 🛠️ Tech Stack
 
