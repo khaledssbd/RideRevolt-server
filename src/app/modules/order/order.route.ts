@@ -10,7 +10,7 @@ const router = express.Router();
 // create Order
 router.post(
   '/',
-  auth(USER_ROLE.customer, USER_ROLE.admin),
+  auth(USER_ROLE.customer),
   validateRequest(orderValidation.createOrderValidationSchema),
   orderController.createOrder,
 );
@@ -40,10 +40,6 @@ router.post(
 );
 
 // verifyPayment
-router.get(
-  '/verify',
-  auth(USER_ROLE.customer, USER_ROLE.admin),
-  orderController.verifyPayment,
-);
+router.get('/verify', auth(USER_ROLE.customer), orderController.verifyPayment);
 
 export const orderRoutes = router;
