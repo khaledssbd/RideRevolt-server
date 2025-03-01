@@ -10,7 +10,7 @@ const router = express.Router();
 // create Order
 router.post(
   '/',
-  auth(USER_ROLE.customer,),
+  auth(USER_ROLE.customer),
   validateRequest(orderValidation.createOrderValidationSchema),
   orderController.createOrder,
 );
@@ -19,10 +19,10 @@ router.post(
 router.get('/revenue', auth(USER_ROLE.admin), orderController.getTotalRevenue);
 
 // Get all orders by admin
-router.get('/', auth(USER_ROLE.admin), orderController.getAllOrders);
+router.get('/all', auth(USER_ROLE.admin), orderController.getAllOrders);
 
 // get order by id
-router.get('/:id', auth(USER_ROLE.admin), orderController.getOrderById);
+router.get('/getby:id', auth(USER_ROLE.admin), orderController.getOrderById);
 
 // get orders by UserEmail
 router.get(
@@ -40,11 +40,6 @@ router.post(
 );
 
 // verifyPayment
-router.post(
-  '/verify',
-  auth(USER_ROLE.admin),
-  validateRequest(orderValidation.verifyPaymentValidationSchema),
-  orderController.verifyPayment,
-);
+router.get('/verify', auth(USER_ROLE.customer), orderController.verifyPayment);
 
 export const orderRoutes = router;

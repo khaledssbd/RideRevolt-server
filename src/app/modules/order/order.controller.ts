@@ -85,7 +85,7 @@ const updateOrderStatusManually = tryCatchAsync(async (req, res) => {
 
 // verifyPayment
 const verifyPayment = tryCatchAsync(async (req, res) => {
-  const result = await orderService.verifyPayment(req.body.order_id);
+  const result = await orderService.verifyPayment(req.query.order_id as string);
 
   sendResponse<any>(res, {
     statusCode: httpStatus.OK,

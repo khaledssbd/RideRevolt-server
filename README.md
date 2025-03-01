@@ -109,4 +109,5 @@ Before you begin, ensure you have the following installed on your local machine:
    npm run start:dev
    ```
 
-Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+Now you can see it in the terminal.
+Open [http://localhost:5000](http://localhost:5000) to view it in the browser.

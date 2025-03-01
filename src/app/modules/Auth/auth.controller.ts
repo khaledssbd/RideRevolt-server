@@ -99,8 +99,7 @@ const forgotPassword = tryCatchAsync(async (req, res) => {
 
 // reset password - verify token and update password using reset link
 const resetPassword = tryCatchAsync(async (req, res) => {
-  const token = req.headers.authorization;
-  const result = await authServices.resetPassword(req.body, token ?? '');
+  const result = await authServices.resetPassword(req.body);
 
   sendResponse<any>(res, {
     statusCode: httpStatus.OK,

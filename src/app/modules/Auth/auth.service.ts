@@ -266,15 +266,16 @@ const forgotPassword = async (userEmail: string) => {
 };
 
 // reset password - verify token and update password using reset link
-const resetPassword = async (
-  payload: { email: string; newPassword: string },
-  token: string,
-) => {
+const resetPassword = async (payload: {
+  email: string;
+  newPassword: string;
+  token: string;
+}) => {
   // checking if the given token is valid(not empty string)
-  if (!token) {
+  if (!payload.token) {
     throw new AppError(
       httpStatus.UNAUTHORIZED,
-      'Token is required for reset password!',
+      'Token is required for resetting password!',
     );
   }
 
@@ -296,7 +297,10 @@ const resetPassword = async (
     throw new AppError(httpStatus.FORBIDDEN, 'This account is blocked!');
   }
 
-  const decoded = verifyToken(token, config.jwt.jwt_access_secret as string);
+  const decoded = verifyToken(
+    payload.token,
+    config.jwt.jwt_access_secret as string,
+  );
 
   if (payload.email !== decoded.email) {
     throw new AppError(httpStatus.FORBIDDEN, 'You are forbidden!');

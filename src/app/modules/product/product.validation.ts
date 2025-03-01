@@ -10,7 +10,7 @@ const createProductValidationSchema = z.object({
       })
       .trim()
       .min(2, { message: 'Name must have minimum 2 characters!' })
-      .max(40, { message: 'Name cannot exceed 40 characters' }),
+      .max(80, { message: 'Name cannot exceed 80 characters' }),
 
     brand: z
       .string({
@@ -18,7 +18,7 @@ const createProductValidationSchema = z.object({
         invalid_type_error: 'Brand must be string!',
       })
       .trim()
-      .max(35, { message: 'Brand cannot exceed 35 characters' }),
+      .max(45, { message: 'Brand cannot exceed 45 characters' }),
 
     model: z
       .string({
@@ -26,7 +26,7 @@ const createProductValidationSchema = z.object({
         invalid_type_error: 'Model must be string!',
       })
       .trim()
-      .max(15, { message: 'Model cannot exceed 15 characters' }),
+      .max(75, { message: 'Model cannot exceed 75 characters' }),
 
     price: z
       .number({
@@ -77,7 +77,7 @@ const updateProductValidationSchema = z.object({
         invalid_type_error: 'Name must be string!',
       })
       .trim()
-      .max(40, { message: 'Name cannot exceed 40 characters' }),
+      .max(80, { message: 'Name cannot exceed 80 characters' }),
 
     brand: z
       .string({
@@ -85,7 +85,15 @@ const updateProductValidationSchema = z.object({
         invalid_type_error: 'Brand must be string!',
       })
       .trim()
-      .max(35, { message: 'Brand cannot exceed 35 characters' }),
+      .max(45, { message: 'Brand cannot exceed 45 characters' }),
+
+    model: z
+      .string({
+        required_error: 'Model is required!',
+        invalid_type_error: 'Model must be string!',
+      })
+      .trim()
+      .max(75, { message: 'Model cannot exceed 75 characters' }),
 
     price: z
       .number({

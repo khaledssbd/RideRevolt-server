@@ -12,7 +12,7 @@ const createProduct = tryCatchAsync(async (req, res) => {
   sendResponse<any>(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Bike posted successfully!',
+    message: 'Product added successfully!',
     data: result,
   });
 });
@@ -24,7 +24,7 @@ const getAllProducts = tryCatchAsync(async (req, res) => {
   sendResponse<any>(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Bikes retrieved successfully!',
+    message: 'Products retrieved successfully!',
     data: result,
   });
 });
@@ -38,7 +38,7 @@ const getProductById = tryCatchAsync(async (req, res) => {
   sendResponse<any>(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Bike retrieved successfully!',
+    message: 'Product retrieved successfully!',
     data: result,
   });
 });
@@ -57,7 +57,7 @@ const updateProductById = tryCatchAsync(async (req, res) => {
   sendResponse<any>(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Bike updated successfully!',
+    message: 'Product updated successfully!',
     data: result,
   });
 });
@@ -70,7 +70,7 @@ const deleteProductById = tryCatchAsync(async (req, res) => {
   sendResponse<any>(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Bike deleted successfully!',
+    message: 'Product deleted successfully!',
     data: result,
   });
 });

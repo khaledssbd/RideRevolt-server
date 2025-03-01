@@ -43,22 +43,7 @@ const updateOrderValidationSchema = z.object({
   }),
 });
 
-// get Orders By User Email
-
-// update Order Validation Schema
-const verifyPaymentValidationSchema = z.object({
-  body: z.object({
-    order_id: z
-      .string({
-        required_error: 'order_id is required!',
-        invalid_type_error: 'order_id must be string!',
-      })
-      .trim(),
-  }),
-});
-
 export const orderValidation = {
   createOrderValidationSchema,
   updateOrderValidationSchema,
-  verifyPaymentValidationSchema,
 };
