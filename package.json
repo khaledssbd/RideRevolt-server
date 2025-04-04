@@ -1,7 +1,28 @@
 {
   "name": "ride_revolt",
-  "version": "1.0.0",
+  "author": {
+    "name": "Khaled Siddique",
+    "email": "khaled@example.com",
+    "url": "https://khaled-siddique.vercel.app"
+  },
+  "description": "A fast and lightweight e-commerce platform built with MongoDB, NodeJS, ExpressJS and ReactJS.",
+  "keywords": [
+    "ecommerce",
+    "react",
+    "typescript",
+    "mongoose",
+    "nodejs",
+    "expressjs",
+    "mongodb"
+  ],
+  "license": "ISC",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khaledssbd/RideRevolt-server.git"
+  },
+  "homepage": "https://riderevolt-backend-khaled.vercel.app",
+  "version": "1.0.0",
   "scripts": {
     "start": "node ./dist/server.js",
     "start:prod": "node ./dist/server.js",
@@ -12,10 +33,6 @@
     "format": "prettier . --write",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
     "bcrypt": "^5.1.1",
     "cloudinary": "^2.5.1",

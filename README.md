@@ -1,18 +1,4 @@
-# RideRevolt
-
-## Live site:
-
-- [RideRevolt clientside on vercel](https://riderevolt-frontend.vercel.app)
-- [RideRevolt serverside on vercel](https://riderevolt-backend-khaled.vercel.app)
-
-## GitHub Repository:
-
-- [Client-Repository](https://github.com/khaledssbd/RideRevolt-client)
-- [Server-Repository](https://github.com/khaledssbd/RideRevolt-server)
-
----
-
-# 🚴‍♂️ RideRevolt – Premium Bikes for Every Rider
+# RideRevolt – Premium Bikes for Every Rider
 
 Welcome to RideRevolt, the ultimate destination for high-quality bikes that
 cater to every rider's needs. Whether you're a city commuter, an adventure
@@ -59,7 +45,21 @@ bikes, make secure purchases, and enjoy reliable after-sales support.
 - 🏆 Customer-First Approach: Your satisfaction is our priority.
 - 💰 Affordable Pricing: Competitive rates without compromising quality.
 
-# npm Packages
+---
+
+## 🌍 Live site:
+
+- [RideRevolt clientside on vercel](https://riderevolt-frontend.vercel.app)
+- [RideRevolt serverside on vercel](https://riderevolt-backend-khaled.vercel.app)
+
+## 🔗 GitHub Repository:
+
+- [Client-Repository](https://github.com/khaledssbd/RideRevolt-client)
+- [Server-Repository](https://github.com/khaledssbd/RideRevolt-server)
+
+---
+
+## 📜 npm Packages 
 
 - npm i bcrypt
 - npm i cloudinary
@@ -80,18 +80,18 @@ bikes, make secure purchases, and enjoy reliable after-sales support.
 
 ---
 
-# Getting Started
+## 🚀 Getting Started
 
 To run this React project on your local machine follow the instructions-
 
-### Prerequisites
+### ⚙️ Prerequisites
 
 Before you begin, ensure you have the following installed on your local machine:
 
 - [Node.js](https://nodejs.org/en/download/) (which includes npm)
 - [Git](https://git-scm.com/)
 
-### Installation
+### 🛠️ Installation
 
 1. ```bash
    git clone https://github.com/khaledssbd/RideRevolt-server

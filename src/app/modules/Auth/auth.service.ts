@@ -254,8 +254,8 @@ const forgotPassword = async (userEmail: string) => {
 
   const resetToken = createToken(
     jwtPayload,
-    config.jwt.jwt_access_secret as string,
-    '10m',
+    config.jwt.jwt_pass_reset_secret as string,
+    config.jwt.jwt_pass_reset_secret_expires_in as string,
   );
 
   const resetUILink = `${config.reset_pass_ui_page_link}?email=${user.email}&token=${resetToken}`;
@@ -299,7 +299,7 @@ const resetPassword = async (payload: {
 
   const decoded = verifyToken(
     payload.token,
-    config.jwt.jwt_access_secret as string,
+    config.jwt.jwt_pass_reset_secret as string,
   );
 
   if (payload.email !== decoded.email) {

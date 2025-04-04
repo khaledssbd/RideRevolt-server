@@ -39,7 +39,12 @@ const createOrderValidationSchema = z.object({
 // update Order Validation Schema
 const updateOrderValidationSchema = z.object({
   body: z.object({
-    status: z.enum(['Pending', 'Paid', 'Shipped', 'Completed', 'Cancelled']),
+    status: z.enum(['Pending', 'Paid', 'Shipped', 'Completed', 'Cancelled'], {
+      errorMap: () => ({
+        message:
+          "Status must be one of 'Pending', 'Paid', 'Shipped', 'Completed' and 'Cancelled'!",
+      }),
+    }),
   }),
 });
 

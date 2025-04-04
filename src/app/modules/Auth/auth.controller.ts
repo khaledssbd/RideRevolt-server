@@ -26,7 +26,7 @@ const login = tryCatchAsync(async (req, res) => {
   res.cookie('refreshToken', refreshToken, {
     secure: config.NODE_ENV === 'production',
     httpOnly: true,
-    sameSite: 'none',
+    sameSite: config.NODE_ENV === 'production' ? 'none' : 'lax',
     maxAge: 1000 * 60 * 60 * 24 * 365, // one year
   });
 

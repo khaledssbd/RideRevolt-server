@@ -52,7 +52,7 @@ const createOrderIntoDB = async (
     $set: { inStock: product.quantity - payload.quantity > 0 },
   });
 
-  // giving user a address!, city!, phone! in first order
+  // giving user an address!, city!, phone! in first order
   if (user.address === 'N/A' || user.city === 'N/A' || user.phone === 'N/A') {
     await user.updateOne({
       address: payload.address,
