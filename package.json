@@ -22,9 +22,9 @@
     "url": "git+https://github.com/khaledssbd/RideRevolt-server.git"
   },
   "bugs": {
-    "url": "https://github.com/khaledssbd/RideRevolt-server.git/issues"
+    "url": "https://github.com/khaledssbd/RideRevolt-server/issues"
   },
-  "homepage": "https://github.com/khaledssbd/RideRevolt-server.git#readme",
+  "homepage": "https://github.com/khaledssbd/RideRevolt-server#readme",
   "version": "1.0.0",
   "scripts": {
     "start": "node ./dist/server.js",
